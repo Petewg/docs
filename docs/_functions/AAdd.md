@@ -29,7 +29,7 @@ This function dynamically increases the length of the aArray by adding one new e
 
 #### Examples
 
-* This example adds 10 numbers to an array and displays a message after adding each element.
+* This example adds 10 numbers to an array.
 
 ``` 
 PROCEDURE Main()
