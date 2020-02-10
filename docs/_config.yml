@@ -1,0 +1,105 @@
+# Site settings
+
+title: Harbour
+description: Harbour Language Reference Guide
+baseurl: /docs
+url: https://harbour.pl/docs
+github_url: https://github.com/rjopek/docs/tree/master/docs
+
+highlighter: rouge
+
+collections:
+#-
+   about:
+      output: true
+      permalink: /:collection/
+#-
+   clevelapi:
+      output: true
+      permalink: /:collection/:name
+
+   datetime:
+      output: true
+      permalink: /clevelapi/:collection/:title
+
+   environment:
+      output: true
+      permalink: /clevelapi/:collection/:title
+
+   error:
+      output: true
+      permalink: /clevelapi/:collection/:title
+
+   extended:
+      output: true
+      permalink: /clevelapi/:collection/:title
+
+   filesys:
+      output: true
+      permalink: /clevelapi/:collection/:title
+
+   idlestates:
+      output: true
+      permalink: /clevelapi/:collection/:title
+
+   item:
+      output: true
+      permalink: /clevelapi/:collection/:title
+
+   macro:
+      output: true
+      permalink: /clevelapi/:collection/:title
+
+   math:
+      output: true
+      permalink: /clevelapi/:collection/:title
+
+   rdd:
+      output: true
+      permalink: /clevelapi/:collection/:title
+
+   terminal:
+      output: true
+      permalink: /clevelapi/:collection/:title
+
+   virtualmachine:
+      output: true
+      permalink: /clevelapi/:collection/:title
+
+#-
+   language:
+      output: true
+      permalink: /:collection/:name
+
+   classes:
+      output: true
+      permalink: /language/:collection/:title
+
+   directives:
+      output: true
+      permalink: /language/:collection/:title
+
+   functions:
+      output: true
+      permalink: /language/:collection/:title
+
+   operators:
+      output: true
+      permalink: /language/:collection/:title
+
+   statements:
+      output: true
+      permalink: /language/:collection/:title
+#-
+   license:
+      output: true
+      permalink: /:collection/
+
+#-
+   tables:
+      output: true
+      permalink: /:collection/:name
+
+   inkeycodes:
+      output: true
+      permalink: /tables/:collection/:title

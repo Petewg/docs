@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+
+   <main class="page post">
+      {% include sidebar.html %}
+
+      <div class="content">
+         <div class="container">
+            {{ content }}
+
+            <a href="{{ site.github_url }}/{{ page.path }}" class="edit"><i class="fa fa-github" aria-hidden="true"></i>
+               Edit me <i class="fa fa-external-link" aria-hidden="true"></i></a>
+         </div>
+      </div>
+   </main>
+
+   {% include footer.html %}
+
+</body>
+
+</html>

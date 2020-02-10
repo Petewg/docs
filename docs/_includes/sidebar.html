@@ -1,0 +1,27 @@
+<div class="sidebar">
+   <a href="{{ site.baseurl }}/about" class="sidebar-link">About</a>
+
+   <a href="#" class="btn-dropdown">C level API<i class="fa fa-caret-down"></i></a>
+   <div class="dropdown-container">
+      {% for item in site.clevelapi %}
+      <a href="{{ site.baseurl }}{{ item.url }}" class="sidebar-link">{{ item.title }}</a>
+      {% endfor %}
+   </div>
+
+   <a href="#" class="btn-dropdown">Language<i class="fa fa-caret-down"></i></a>
+   <div class="dropdown-container">
+      {% for item in site.language %}
+      <a href="{{ site.baseurl }}{{ item.url }}" class="sidebar-link">{{ item.title }}</a>
+      {% endfor %}
+   </div>
+
+   <a href="{{ site.baseurl }}/license" class="sidebar-link">License</a>
+
+   <a href="#" class="btn-dropdown">Tables<i class="fa fa-caret-down"></i></a>
+   <div class="dropdown-container">
+      {% for item in site.tables %}
+      <a href="{{ site.baseurl }}{{ item.url }}" class="sidebar-link">{{ item.title }}</a>
+      {% endfor %}
+   </div>
+
+</div>

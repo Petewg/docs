@@ -1,0 +1,57 @@
+<div class="sidebar sidebar-menu" id="sidebar">
+   <div class="sidebar-header">
+      <div class="title-container">
+         <a href="{{ site.baseurl }}/" class="title">Menu</a> 
+         <i class="fa fa-times" aria-hidden="true" id="btnClose"></i>
+      </div>
+      <input type="text" id="search" onkeyup="search()" placeholder="Search..." title="Type in a category" class="searchform">
+   </div>
+
+   <!-- List posts language -->
+   {% if page.url contains '/language/classes' %}
+      {% assign sorted_posts = site.classes | sort:'title' %}
+   {% elsif page.url contains '/language/directives' %}
+      {% assign sorted_posts = site.directives | sort:'title' %}
+   {% elsif page.url contains '/language/functions' %}
+      {% assign sorted_posts = site.functions | sort:'title' %}
+   {% elsif page.url contains '/language/operators' %}
+      {% assign sorted_posts = site.operators | sort:'title' %}
+   {% elsif page.url contains '/language/statements' %}
+      {% assign sorted_posts = site.statements | sort:'title' %}
+
+   <!-- List posts clevelapi -->
+   {% elsif page.url contains '/clevelapi/datetime' %}
+      {% assign sorted_posts = site.datetime | sort:'title' %}
+   {% elsif page.url contains '/clevelapi/enviroment' %}
+      {% assign sorted_posts = site.enviroment | sort:'title' %}
+   {% elsif page.url contains '/clevelapi/error' %}
+      {% assign sorted_posts = site.error | sort:'title' %}
+   {% elsif page.url contains '/clevelapi/extended' %}
+      {% assign sorted_posts = site.extended | sort:'title' %}
+   {% elsif page.url contains '/clevelapi/filesys' %}
+      {% assign sorted_posts = site.filesys | sort:'title' %}
+   {% elsif page.url contains '/clevelapi/idlestates' %}
+      {% assign sorted_posts = site.idlestates | sort:'title' %}
+   {% elsif page.url contains '/clevelapi/item' %}
+      {% assign sorted_posts = site.item | sort:'title' %}
+   {% elsif page.url contains '/clevelapi/macro' %}
+      {% assign sorted_posts = site.macro | sort:'title' %}
+   {% elsif page.url contains '/clevelapi/math' %}
+      {% assign sorted_posts = site.math | sort:'title' %}
+   {% elsif page.url contains '/clevelapi/rdd' %}
+      {% assign sorted_posts = site.rdd | sort:'title' %}
+   {% elsif page.url contains '/clevelapi/terminal' %}
+      {% assign sorted_posts = site.terminal | sort:'title' %}
+   {% elsif page.url contains '/clevelapi/virtualmachine' %}
+      {% assign sorted_posts = site.virtualmachine | sort:'title' %}
+   {% endif %}
+
+   <div class="sidebar-list">
+      {% for post in sorted_posts %}
+         {% if post.url %}
+            <a href="{{ site.baseurl }}{{ post.url }}" class="sidebar-link">{{ post.title }}</a>
+         {% endif %}
+      {% endfor %}
+   </div>
+
+</div>
