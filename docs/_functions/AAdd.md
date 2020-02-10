@@ -11,7 +11,7 @@ Add a new element to the end of an array
 
 AADD( *aTarget*, *xValue* )
 
- #### Arguments
+#### Arguments
 
 *aTarget* is the array to which a new element is to be added.
 
