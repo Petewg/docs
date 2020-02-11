@@ -1,0 +1,15 @@
+.highlight>pre>div {
+   display: flex;
+   flex-direction: row-reverse;
+}
+
+.btn-copy {
+   color: #000;
+   border: 0;
+   padding: 5px 10px;
+   cursor: pointer;
+}
+
+.btn-copy:hover {
+   color: #a8a8a8;
+}
