@@ -68,7 +68,7 @@ body {
 
 .page .content p {
    margin-bottom: 1rem;
-   font-size: 1.2rem;
+   font-size: 1rem;
    line-height: 1.5rem;
 }
 
@@ -282,7 +282,13 @@ body {
 
 .post p {
    margin-bottom: 1rem;
-   font-size: 1.15rem;
+   font-size: 1rem;
+}
+
+.post p em {
+   margin-bottom: 1rem;
+   font-size: 1rem;
+   color: #ff7f7f;
 }
 
 .post h4 {
